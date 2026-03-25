@@ -9,7 +9,7 @@ pipeline {
                     $class: 'GitSCM',
                     branches: [[name: '*/main']],
                     userRemoteConfigs: [[
-                        url: 'https://github.com/Vaibhav12050/devopslabfeedback'
+                        url: 'https://github.com/Mansi123-oss/DevopsLab'
                     ]]
                 ])
             }
