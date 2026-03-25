@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <form onsubmit="return validateForm()">
+
+        <h2>🎓 Registration Form</h2>
+
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="email" id="email" placeholder="Email Address">
+        <input type="text" id="mobile" placeholder="Mobile Number">
+        <input type="password" id="password" placeholder="Password">
+        <input type="password" id="confirm" placeholder="Confirm Password">
+
+        <div class="radio-group">
+            <label><input type="radio" name="gender" id="male"> Male</label>
+            <label><input type="radio" name="gender" id="female"> Female</label>
+        </div>
+
+        <select id="course">
+            <option value="">Select Course</option>
+            <option>B.Tech</option>
+            <option>BCA</option>
+            <option>BBA</option>
+        </select>
+
+        <textarea id="feedback" placeholder="Write your feedback..."></textarea>
+
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset" id="resetBtn">Clear</button>
+        </div>
+
+    </form>
+</div>
+<script src="validate.js"></script>
+</body>
+
+
+</html>
